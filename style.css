@@ -10,3 +10,19 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
 }
+
+/* SOCIAL MEDIA ICONS */
+
+.social-icons {
+  padding: 30px;
+  text-align: center;
+  background-color: aquamarine;
+}
+
+.social-icons a {
+  color: #000;
+  line-height: 30px;
+  font-size: 60px;
+  margin: 0 5px;
+  text-decoration: none;
+}

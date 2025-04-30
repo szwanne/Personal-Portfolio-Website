@@ -101,3 +101,27 @@ a {
   background-color: aqua;
   padding: 20px;
 }
+
+.item-1,
+.item-2,
+.item-3,
+.item-4 {
+  border: 1px solid #555;
+  display: flex;
+  gap: 10px;
+  max-width: 600px;
+  max-height: 250px;
+}
+.text-work {
+  padding: 10px;
+  margin: 10px;
+}
+
+.item-1 img,
+.item-2 img,
+.item-3 img,
+.item-4 img {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}

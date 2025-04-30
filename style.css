@@ -80,3 +80,24 @@ a {
   height: 5vh;
   align-items: center;
 }
+
+/* ABOUT ME SECTION */
+
+.about-section {
+  background-color: lightpink;
+  margin: 20px 20px;
+  text-wrap: wrap;
+  max-width: 90%;
+  margin-bottom: 20px;
+}
+
+/* GRID SECTION */
+
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 10px;
+  column-gap: 10px;
+  background-color: aqua;
+  padding: 20px;
+}

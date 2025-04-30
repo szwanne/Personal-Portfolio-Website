@@ -61,3 +61,22 @@ body {
 .right-section {
   background-color: lightcoral;
 }
+
+/* NAV-BAR */
+
+li {
+  list-style: none; /*Removes the bullet points in the nav-bar*/
+}
+a {
+  text-decoration: none; /*Removes the underline mark under the text in the nav-bar */
+}
+
+.nav-bar ul {
+  display: flex;
+  background-color: lightgreen;
+  justify-content: space-evenly;
+  width: 70%;
+  margin-left: auto;
+  height: 5vh;
+  align-items: center;
+}

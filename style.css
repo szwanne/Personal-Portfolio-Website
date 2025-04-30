@@ -46,3 +46,18 @@ body {
   margin: 30px;
   padding: 0 10px;
 }
+
+/* MAIN CONTAINER */
+
+.main-container {
+  display: flex;
+  gap: 20px;
+  background-color: #555;
+  margin: 50px 200px;
+}
+
+/* RIGHT SECTION */
+
+.right-section {
+  background-color: lightcoral;
+}

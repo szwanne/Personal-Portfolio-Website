@@ -151,3 +151,11 @@ a {
 .item--6 {
   text-align: center;
 }
+
+/* RESUME CONTAINER */
+
+.resume-container {
+  background-color: lightseagreen;
+  gap: 20px;
+  margin: 50px 200px;
+}

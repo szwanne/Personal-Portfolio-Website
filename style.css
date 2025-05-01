@@ -125,3 +125,29 @@ a {
   top: 10px;
   left: 10px;
 }
+
+/* TECH STAC */
+.stack {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  background-color: lightgray;
+  margin: 75px 0;
+}
+
+.stack-section {
+  height: 250px;
+}
+
+.stack-section h2 {
+  margin-top: 20px;
+}
+
+.item--1,
+.item--2,
+.item--3,
+.item--4,
+.item--5,
+.item--6 {
+  text-align: center;
+}

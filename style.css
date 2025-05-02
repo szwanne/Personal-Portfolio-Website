@@ -178,3 +178,16 @@ a {
 .year {
   color: aqua;
 }
+
+/* PORTFOLIO SECTION */
+
+.portfolio-container {
+  background-color: lightgoldenrodyellow;
+  margin: 50px 200px;
+}
+
+.grid-portfolio-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
+}

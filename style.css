@@ -191,3 +191,8 @@ a {
   grid-template-columns: repeat(3, 1fr);
   row-gap: 20px;
 }
+
+.item__1 {
+  border: 1px solid lightgrey;
+  max-width: 400px;
+}

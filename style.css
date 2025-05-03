@@ -196,3 +196,16 @@ a {
   border: 1px solid lightgrey;
   max-width: 400px;
 }
+
+/* BLOG SECTION */
+
+.blog-container {
+  background-color: lightgoldenrodyellow;
+  margin: 50px 200px;
+}
+
+.grid-blog-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
+}

@@ -209,3 +209,33 @@ a {
   grid-template-columns: repeat(3, 1fr);
   row-gap: 20px;
 }
+
+/* CONTACT SECTION */
+.contact-container {
+  background-color: lightgoldenrodyellow;
+  margin: 50px 200px;
+  padding: 10px;
+}
+
+.map {
+  width: 800px;
+  height: 400px;
+}
+
+.name-email {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+input {
+  width: 200px;
+  height: 30px;
+}
+
+.message input {
+  margin-bottom: 20px;
+  width: 800px;
+  height: 200px;
+}

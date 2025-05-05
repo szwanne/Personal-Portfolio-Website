@@ -47,6 +47,30 @@ body {
   padding: 0 10px;
 }
 
+.left-section h1 {
+  padding: 20px;
+}
+
+.left-section p {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.email,
+.phone,
+.birthday,
+.location {
+  display: flex;
+  gap: 20px;
+}
+
+.email-text,
+.phone-text,
+.birthday-text,
+.location-text {
+  line-height: 25px;
+}
+
 /* MAIN CONTAINER */
 
 .main-container {

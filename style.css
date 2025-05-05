@@ -116,12 +116,15 @@ a {
 
 .about-section {
   background-color: lightpink;
-  margin: 20px 20px;
+  margin: 0px 20px;
   text-wrap: wrap;
   max-width: 90%;
   margin-bottom: 20px;
 }
 
+.title h1 {
+  margin: 5px;
+}
 /* GRID SECTION */
 
 .grid-section {

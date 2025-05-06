@@ -156,6 +156,8 @@ a {
   gap: 10px;
   max-width: 600px;
   max-height: 250px;
+  border-radius: 10px;
+  box-shadow: 0px 1.25px 2.5px 1.2px #555;
 }
 .text-work {
   padding: 10px;

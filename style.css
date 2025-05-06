@@ -91,6 +91,7 @@ body {
 
 .right-section {
   background-color: lightcoral;
+  border-radius: 20px;
 }
 
 /* NAV-BAR */
@@ -108,8 +109,10 @@ a {
   justify-content: space-evenly;
   width: 70%;
   margin-left: auto;
-  height: 5vh;
+  height: 8vh;
   align-items: center;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 20px;
 }
 
 /* ABOUT ME SECTION */
@@ -118,13 +121,20 @@ a {
   background-color: lightpink;
   margin: 0px 20px;
   text-wrap: wrap;
-  max-width: 90%;
+  max-width: 95%;
   margin-bottom: 20px;
 }
 
 .title h1 {
   margin: 5px;
   margin-left: 20px;
+}
+
+.about-section p {
+  text-wrap: wrap;
+  max-width: 95%;
+  padding: 15px;
+  line-height: 25px;
 }
 /* GRID SECTION */
 

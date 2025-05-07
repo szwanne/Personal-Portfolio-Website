@@ -90,6 +90,10 @@ body {
   margin: 50px 125px;
 }
 
+header h1 {
+  padding: 20px;
+  margin-left: 20px;
+}
 /* RIGHT SECTION */
 
 .right-section {
@@ -232,6 +236,22 @@ a {
 
 .year {
   color: aqua;
+}
+
+.education-main h4,
+.experience-section h4 {
+  display: list-item; /* This has to be "list-item"*/
+  margin-left: 1em; /* If you use default list-style-position 'outside', you may need this */
+}
+
+.education-title {
+  display: flex;
+  gap: 10px;
+}
+
+.book-logo {
+  position: relative;
+  top: -2.5px;
 }
 
 /* PORTFOLIO SECTION */

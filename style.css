@@ -254,6 +254,44 @@ a {
   top: -2.5px;
 }
 
+.skills-main {
+  width: 100%;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+.skill-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.skill-bar {
+  height: 14px;
+  background: lightgreen;
+  border-radius: 4px;
+}
+
+.skill-per {
+  height: 14px;
+  background: lightseagreen;
+  border-radius: 4px;
+  position: relative;
+}
+
+.skill-per::before {
+  content: "";
+  position: absolute;
+  padding: 4px 6px;
+  background: white;
+  border-radius: 4px;
+  font-size: 12px;
+  top: -35px;
+  right: 0;
+}
+
 /* PORTFOLIO SECTION */
 
 .portfolio-container {

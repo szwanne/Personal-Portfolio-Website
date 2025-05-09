@@ -282,7 +282,7 @@ a {
 }
 
 .skill-per::before {
-  content: "";
+  content: attr(per);
   position: absolute;
   padding: 4px 6px;
   background: white;
@@ -290,7 +290,22 @@ a {
   font-size: 12px;
   top: -35px;
   right: 0;
+  color: black;
+  transform: translateX(50%);
 }
+
+.skill-per::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #f1f1f1;
+  top: -20px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  z-index: -1;
+}
+
 .txt {
   font-weight: 400px;
   font-size: 17px;

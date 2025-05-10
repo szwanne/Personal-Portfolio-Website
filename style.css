@@ -332,22 +332,43 @@ a {
 .portfolio-container {
   background-color: lightgoldenrodyellow;
   margin: 50px 125px;
+  min-height: 950px;
 }
 
 .grid-portfolio-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   row-gap: 20px;
+  padding: 20px;
+  background-color: lightcyan;
+  max-width: 1200px;
+  margin-left: 200px;
 }
 
 .portfolio-text {
   display: flex;
   gap: 15px;
+  margin-top: 20px;
+  justify-content: center;
 }
 
 .portfolio-text input {
   width: 90px;
+  cursor: pointer;
 }
+
+.item__1,
+.item__2,
+.item__3,
+.item__4,
+.item__5,
+.item__6 {
+  max-width: auto;
+  border: 1px solid #555;
+  min-height: 350px;
+  margin: 10px auto;
+}
+
 /* BLOG SECTION */
 
 .blog-container {

@@ -332,7 +332,7 @@ a {
 .portfolio-container {
   background-color: lightgoldenrodyellow;
   margin: 50px 125px;
-  min-height: 950px;
+  min-height: 990px;
 }
 
 .grid-portfolio-section {
@@ -379,9 +379,43 @@ a {
 .grid-blog-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  row-gap: 20px;
+  row-gap: 10px;
+  padding: 20px;
+  margin: 100px;
+  margin-top: -10px;
 }
 
+.item__1,
+.item__2,
+.item__3,
+.item__4,
+.item__5,
+.item__6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item__6 h4,
+.item__3 h4,
+.item__4 h4,
+.item__1 h4,
+.item__2 h4,
+.item__5 h4 {
+  text-wrap: wrap;
+  width: 360px;
+  margin-top: 10px;
+}
+
+.item__1 p,
+.item__2 p,
+.item__3 p,
+.item__4 p,
+.item__5 p,
+.item__6 p {
+  margin: 15px;
+  margin-top: -5px;
+}
 /* CONTACT SECTION */
 .contact-container {
   background-color: lightgoldenrodyellow;

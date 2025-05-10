@@ -217,6 +217,7 @@ a {
   background-color: lightseagreen;
   gap: 20px;
   margin: 50px 125px;
+  min-height: 1900px;
 }
 
 /* EDUCATION SECTION */
@@ -229,19 +230,34 @@ a {
   background-color: antiquewhite;
 }
 
+.experience-section {
+  min-height: 800px;
+  line-height: 28px;
+}
+
+.skills-section {
+  min-height: 150px;
+}
+
 .education-main,
 .experience-main {
   max-width: 60vw;
 }
 
 .year {
-  color: aqua;
+  color: #555;
 }
 
 .education-main h4,
 .experience-section h4 {
   display: list-item; /* This has to be "list-item"*/
-  margin-left: 1em; /* If you use default list-style-position 'outside', you may need this */
+  margin-left: 2em; /* If you use default list-style-position 'outside', you may need this */
+}
+
+.description_text:before {
+  content: "★";
+  margin-left: 1em;
+  font-size: 10px;
 }
 
 .education-title {

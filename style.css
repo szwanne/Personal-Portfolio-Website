@@ -423,9 +423,23 @@ a {
   padding: 10px;
 }
 
-.map {
-  width: 800px;
-  height: 400px;
+.google-map {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25%;
+  position: relative;
+}
+
+.google-map iframe {
+  height: 85%;
+  width: 48%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  margin-left: 415px;
+  margin-top: 20px;
 }
 
 .name-email {
@@ -444,4 +458,11 @@ input {
   margin-bottom: 20px;
   width: 800px;
   height: 200px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
 }

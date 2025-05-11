@@ -11,18 +11,19 @@ body {
   font-size: 18px;
   max-height: 100vh;
   max-width: 100vw;
+  background-color: #add8e6;
 }
 
 /* SOCIAL MEDIA ICONS */
 
 .social-icons {
   padding: 30px;
-  background-color: #00506b;
+  /* background-color: #00506b; */
   text-align: center;
 }
 
 .social-icons a {
-  color: #fff;
+  color: #000;
   font-size: 30px;
   margin: 0 5px;
   text-decoration: none;
@@ -41,12 +42,15 @@ body {
 
 /* LEFT SECTION */
 .left-section {
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
+  background-color: #ededed;
   width: 25vw;
   margin: 30px;
   padding: 0 20px;
   border-radius: 20px;
   max-height: fit-content;
+  margin: auto 30px;
+  border: 1px solid #555;
 }
 
 .left-section h1 {
@@ -79,6 +83,8 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  border-radius: 8px;
+  margin-top: 10px;
 }
 
 /* MAIN CONTAINER */
@@ -86,7 +92,7 @@ body {
 .main-container {
   display: flex;
   gap: 20px;
-  background-color: #555;
+  /* background-color: #555; */
   margin: 50px 125px;
 }
 
@@ -97,8 +103,10 @@ header h1 {
 /* RIGHT SECTION */
 
 .right-section {
-  background-color: lightcoral;
+  /* background-color: lightcoral; */
+  background-color: #ededed;
   border-radius: 20px;
+  border: 0.5px solid #555;
 }
 
 /* NAV-BAR */
@@ -112,7 +120,8 @@ a {
 
 .nav-bar ul {
   display: flex;
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
+  background-color: #e0e0e0;
   justify-content: space-evenly;
   width: 70%;
   margin-left: auto;
@@ -125,7 +134,7 @@ a {
 /* ABOUT ME SECTION */
 
 .about-section {
-  background-color: lightpink;
+  /* background-color: lightpink; */
   margin: 0px 20px;
   text-wrap: wrap;
   max-width: 95%;
@@ -150,7 +159,7 @@ a {
   grid-template-columns: repeat(2, 1fr);
   row-gap: 10px;
   column-gap: 10px;
-  background-color: aqua;
+  /* background-color: aqua; */
   padding: 20px;
 }
 
@@ -188,8 +197,8 @@ a {
 .stack {
   display: flex;
   justify-content: space-around;
-  gap: 10px;
-  background-color: lightgray;
+  gap: 15px;
+  /* background-color: lightgray; */
   margin: 30px 0;
 }
 

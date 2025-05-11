@@ -223,10 +223,15 @@ a {
 /* RESUME CONTAINER */
 
 .resume-container {
-  background-color: lightseagreen;
+  /* background-color: lightseagreen; */
+  background-color: #ededed;
   gap: 20px;
   margin: 50px 125px;
   min-height: 1900px;
+  border-radius: 20px;
+  border: 0.5px solid #555;
+  max-width: 1300px;
+  margin-left: 480px;
 }
 
 /* EDUCATION SECTION */
@@ -236,7 +241,8 @@ a {
 .skills-section {
   margin: 30px;
   padding: 20px;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
+  background-color: #e3dac9;
 }
 
 .experience-section {
@@ -339,9 +345,13 @@ a {
 /* PORTFOLIO SECTION */
 
 .portfolio-container {
-  background-color: lightgoldenrodyellow;
+  /* background-color: lightgoldenrodyellow; */
+  background-color: #ededed;
   margin: 50px 125px;
   min-height: 990px;
+  border-radius: 20px;
+  max-width: 1300px;
+  margin-left: 480px;
 }
 
 .grid-portfolio-section {
@@ -349,16 +359,21 @@ a {
   grid-template-columns: repeat(3, 1fr);
   row-gap: 20px;
   padding: 20px;
-  background-color: lightcyan;
+  /* background-color: lightcyan; */
   max-width: 1200px;
-  margin-left: 200px;
+  margin-left: 30px;
+  margin-right: 0px;
 }
 
 .portfolio-text {
   display: flex;
-  gap: 15px;
+  gap: 0px;
   margin-top: 20px;
   justify-content: center;
+  padding: 10px;
+  align-items: baseline;
+  /* background-color: yellow; */
+  margin-bottom: 20px;
 }
 
 .portfolio-text input {
@@ -381,8 +396,12 @@ a {
 /* BLOG SECTION */
 
 .blog-container {
-  background-color: lightgoldenrodyellow;
+  /* background-color: lightgoldenrodyellow; */
+  background-color: #ededed;
   margin: 50px 125px;
+  border-radius: 20px;
+  max-width: 1300px;
+  margin-left: 480px;
 }
 
 .grid-blog-section {
@@ -429,7 +448,12 @@ a {
 .contact-container {
   background-color: lightgoldenrodyellow;
   margin: 50px 125px;
+  min-height: 990px;
   padding: 10px;
+  border-radius: 20px;
+  border: 0.5px solid #555;
+  max-width: 1300px;
+  margin-left: 480px;
 }
 
 .google-map {

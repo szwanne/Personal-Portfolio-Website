@@ -489,7 +489,7 @@ input {
 
 .message input {
   margin-bottom: 20px;
-  width: 800px;
+  width: 638px;
   height: 200px;
 }
 
@@ -498,4 +498,5 @@ input {
   flex-direction: column;
   gap: 15px;
   align-items: center;
+  margin-left: 180px;
 }

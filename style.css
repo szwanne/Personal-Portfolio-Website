@@ -363,11 +363,13 @@ a {
   max-width: 1200px;
   margin-left: 30px;
   margin-right: 0px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .portfolio-text {
   display: flex;
-  gap: 0px;
+  gap: 10px;
   margin-top: 20px;
   justify-content: center;
   padding: 10px;
@@ -391,6 +393,8 @@ a {
   border: 1px solid #555;
   min-height: 350px;
   margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 0px 1.2px 20px 1.5px #555;
 }
 
 /* BLOG SECTION */
@@ -411,36 +415,38 @@ a {
   padding: 20px;
   margin: 100px;
   margin-top: -10px;
+  column-gap: 15px;
 }
 
-.item__1,
-.item__2,
-.item__3,
-.item__4,
-.item__5,
-.item__6 {
+.item___1,
+.item___2,
+.item___3,
+.item___4,
+.item___5,
+.item___6 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid #555;
 }
 
-.item__6 h4,
-.item__3 h4,
-.item__4 h4,
-.item__1 h4,
-.item__2 h4,
-.item__5 h4 {
+.item___6 h4,
+.item___3 h4,
+.item___4 h4,
+.item___1 h4,
+.item___2 h4,
+.item___5 h4 {
   text-wrap: wrap;
   width: 360px;
   margin-top: 10px;
 }
 
-.item__1 p,
-.item__2 p,
-.item__3 p,
-.item__4 p,
-.item__5 p,
-.item__6 p {
+.item___1 p,
+.item___2 p,
+.item___3 p,
+.item___4 p,
+.item___5 p,
+.item___6 p {
   margin: 15px;
   margin-top: -5px;
 }

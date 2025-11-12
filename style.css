@@ -102,11 +102,19 @@ header h1 {
 }
 /* RIGHT SECTION */
 
-.right-section {
-  /* background-color: lightcoral; */
+/* .right-section {
   background-color: #ededed;
   border-radius: 20px;
   border: 0.5px solid #555;
+} */
+
+.right-section {
+  background-color: #ededed;
+  border-radius: 20px;
+  border: 0.5px solid #555;
+  flex: 1; /* take the rest of the width */
+  padding: 20px;
+  overflow-y: auto;
 }
 
 /* NAV-BAR */
@@ -225,13 +233,13 @@ a {
 .resume-container {
   /* background-color: lightseagreen; */
   background-color: #ededed;
-  gap: 20px;
-  margin: 50px 125px;
+  gap: 0px;
+  margin: 0px;
   min-height: 1900px;
   border-radius: 20px;
   border: 0.5px solid #555;
   max-width: 1300px;
-  margin-left: 480px;
+  margin-left: 0px;
 }
 
 /* EDUCATION SECTION */
@@ -347,11 +355,11 @@ a {
 .portfolio-container {
   /* background-color: lightgoldenrodyellow; */
   background-color: #ededed;
-  margin: 50px 125px;
+  margin: 0px;
   min-height: 990px;
   border-radius: 20px;
   max-width: 1300px;
-  margin-left: 480px;
+  margin-left: 0px;
 }
 
 .grid-portfolio-section {
@@ -402,10 +410,10 @@ a {
 .blog-container {
   /* background-color: lightgoldenrodyellow; */
   background-color: #ededed;
-  margin: 50px 125px;
+  margin: 0px;
   border-radius: 20px;
   max-width: 1300px;
-  margin-left: 480px;
+  margin-left: 0px;
 }
 
 .grid-blog-section {
@@ -453,13 +461,13 @@ a {
 /* CONTACT SECTION */
 .contact-container {
   background-color: lightgoldenrodyellow;
-  margin: 50px 125px;
+  margin: 0px;
   min-height: 990px;
   padding: 10px;
   border-radius: 20px;
   border: 0.5px solid #555;
   max-width: 1300px;
-  margin-left: 480px;
+  margin-left: 0px;
 }
 
 .google-map {
@@ -505,4 +513,18 @@ input {
   gap: 15px;
   align-items: center;
   margin-left: 180px;
+}
+
+.nav-bar a.active {
+  color: #007bff;
+  font-weight: bold;
+  border-bottom: 2px solid #007bff;
+}
+
+.resume-container,
+.portfolio-container,
+.blog-container,
+.contact-container,
+.right-section {
+  display: none;
 }

@@ -454,6 +454,7 @@ a {
   text-wrap: wrap;
   width: 360px;
   margin-top: 10px;
+  margin: 15px;
 }
 
 .item___1 p,
@@ -505,8 +506,8 @@ a {
 }
 
 input {
-  width: 200px;
-  height: 30px;
+  width: 210px;
+  height: 35px;
 }
 
 .message input {

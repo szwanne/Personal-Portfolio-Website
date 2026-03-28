@@ -408,7 +408,6 @@ a {
   overflow: hidden;
 }
 
-
 .item__1 > a > img,
 .item__2 > a > img,
 .item__3 > a > img,
@@ -421,21 +420,22 @@ a {
 /* BLOG SECTION */
 
 .blog-container {
-  /* background-color: lightgoldenrodyellow; */
-  background-color: #ededed;
   margin: 0px;
   border-radius: 20px;
   max-width: 1300px;
   margin-left: 0px;
+  min-width: auto;
+  background-color: #ededed;
 }
 
 .grid-blog-section {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  row-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 20px;
   padding: 20px;
-  margin: 100px;
-  margin-top: -10px;
+  max-width: 1200px;
+  margin-left: 30px;
+  margin-right: 0px;
   column-gap: 15px;
 }
 
@@ -470,6 +470,14 @@ a {
 .item___6 p {
   margin: 15px;
   margin-top: -5px;
+}
+
+.item___1 > h4 > a,
+.item___2 > h4 > a,
+.item___3 > h4 > a,
+.item___4 > h4 > a {
+  color: #000;
+  font-style: italic;
 }
 /* CONTACT SECTION */
 .contact-container {

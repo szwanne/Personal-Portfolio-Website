@@ -235,7 +235,7 @@ a {
   background-color: #ededed;
   gap: 0px;
   margin: 0px;
-  min-height: 1900px;
+  min-height: auto;
   border-radius: 20px;
   border: 0.5px solid #555;
   max-width: 1300px;
@@ -254,7 +254,7 @@ a {
 }
 
 .experience-section {
-  min-height: 800px;
+  min-height: auto;
   line-height: 28px;
 }
 
@@ -300,8 +300,8 @@ a {
 }
 
 .skill-name {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 400;
   color: black;
   text-transform: uppercase;
   margin: 20px 0;

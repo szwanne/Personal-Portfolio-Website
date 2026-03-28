@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll(
-    ".right-section, .resume-container, .portfolio-container, .blog-container, .contact-container"
+    ".right-section, .resume-container, .portfolio-container, .blog-container, .contact-container",
   );
   const navLinks = document.querySelectorAll(".nav-bar a");
 
@@ -31,3 +31,29 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const formData = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      message: document.getElementById("message").value,
+    };
+
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (res.ok) {
+      alert("Message sent successfully!");
+    } else {
+      alert("Something went wrong.");
+    }
+  });

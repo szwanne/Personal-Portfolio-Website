@@ -57,6 +57,7 @@ body {
   padding: 20px;
   font-size: 30px;
   font-weight: 580;
+  text-align: center;
 }
 
 .left-section p {
@@ -102,18 +103,11 @@ header h1 {
 }
 /* RIGHT SECTION */
 
-/* .right-section {
-  background-color: #ededed;
-  border-radius: 20px;
-  border: 0.5px solid #555;
-} */
-
 .right-section {
   background-color: #ededed;
   border-radius: 20px;
   border: 0.5px solid #555;
   flex: 1; /* take the rest of the width */
-  padding: 20px;
   overflow-y: auto;
 }
 
@@ -480,34 +474,27 @@ a {
   font-style: italic;
 }
 /* CONTACT SECTION */
+
 .contact-container {
-  background-color: lightgoldenrodyellow;
-  margin: 0px;
-  min-height: 990px;
-  padding: 10px;
+  margin: 0;
   border-radius: 20px;
-  border: 0.5px solid #555;
-  max-width: 1300px;
+  min-width: 70%;
   margin-left: 0px;
+  background-color: #ededed;
 }
 
 .google-map {
   width: 100%;
-  height: 450px;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 25%;
+  height: 30vh;
   position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .google-map iframe {
-  height: 85%;
-  width: 48%;
-  left: 0;
-  top: 0;
-  position: absolute;
-  margin-left: 415px;
-  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 .name-email {
@@ -533,7 +520,9 @@ input {
   flex-direction: column;
   gap: 15px;
   align-items: center;
-  margin-left: 180px;
+  background-color: #d5f0b0;
+  min-width: 100%;
+  margin-bottom: 30px;
 }
 
 .nav-bar a.active {
@@ -548,4 +537,25 @@ input {
 .contact-container,
 .right-section {
   display: none;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+form {
+  min-width: 60%;
 }

@@ -23,7 +23,7 @@
           class="profile-pic"
         />
         <h1>Sipho Zwane</h1>
-        <p>Web developer</p>
+        <p>Software Engineer</p>
         <span></span>
         <div class="personal-info">
           <div class="email">
@@ -35,7 +35,7 @@
             />
             <div class="email-text">
               <h6>EMAIL</h6>
-              <p>szwanne@gmail.com</p>
+              <p>szwane.career@gmail.com</p>
             </div>
           </div>
           <div class="phone">
@@ -58,8 +58,8 @@
               height="30px"
             />
             <div class="birthday-text">
-              <h6>BIRTHDAY</h6>
-              <p>January 19, 1998</p>
+              <h6>Focus</h6>
+              <p>Data Driven Systems</p>
             </div>
           </div>
           <div class="location">
@@ -101,7 +101,6 @@
         </div>
         <div class="title">
           <h1>About Me</h1>
-          <br />
         </div>
         <div class="about-section">
           <p>
@@ -593,12 +592,11 @@
           <h1>Contact</h1>
         </header>
         <span></span>
-
         <div class="google-map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35449.128826395354!2d27.826097079411934!3d-26.131793739716965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e959fc44e94e52b%3A0x21e34710a49d1963!2sRoodepoort!5e0!3m2!1sen!2sza!4v1746907839423!5m2!1sen!2sza"
-            width="600"
-            height="450"
+            width="100%"
+            height="100%"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
@@ -606,20 +604,43 @@
           ></iframe>
         </div>
         <div class="contact-form">
-          <form>
-            <div>
-              <h3>Contact Form</h3>
+          <form id="contact-form">
+            <h2>Contact Me</h2>
+            <br />
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                required
+              />
             </div>
 
-            <div class="name-email">
-              <input type="text" value="Full Name" class="name" />
-              <input type="text" value="Email Address" class="email" />
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email address"
+                required
+              />
             </div>
 
-            <div class="message">
-              <input type="text" value="Your Message" class="message" />
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Write your message here..."
+                required
+              ></textarea>
             </div>
-            <input type="button" value="Send Message" class="message" />
+
+            <button type="submit" class="submit-btn">Send Message</button>
           </form>
         </div>
       </div>

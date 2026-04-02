@@ -19,7 +19,7 @@ export default async function handler(req, res) {
 
   try {
     const response = await resend.emails.send({
-      from: "onboarding@resend.dev", // Change later after verification
+      from: "Portfolio <onboarding@resend.dev>",
       to: "szwane.career@gmail.com",
       reply_to: email,
       subject: "New Portfolio Contact Message",

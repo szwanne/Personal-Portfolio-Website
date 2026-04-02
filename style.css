@@ -216,6 +216,60 @@ a {
   border-bottom: 2px solid var(--accent);
 }
 
+/* HAMBURGER BUTTON — hidden on desktop */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background: var(--panel-alt);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  z-index: 100;
+  transition:
+    background 200ms ease,
+    border-color 200ms ease;
+}
+
+.hamburger:hover {
+  background: var(--accent-glow);
+  border-color: var(--accent);
+}
+
+.hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: var(--text);
+  border-radius: 2px;
+  transition:
+    transform 300ms ease,
+    opacity 300ms ease,
+    background-color 200ms ease;
+  transform-origin: center;
+}
+
+/* Animate to X when open */
+.hamburger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+  background-color: var(--accent);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+  background-color: var(--accent);
+}
+
 /* ABOUT ME SECTION */
 
 .about-section {
@@ -644,8 +698,7 @@ a {
 .item___1 h4,
 .item___2 h4,
 .item___5 h4 {
-  text-wrap: wrap;
-  width: 360px;
+  min-width: 360px;
   margin-top: 10px;
   margin: 15px;
   color: var(--text);
@@ -671,6 +724,13 @@ a {
   color: var(--accent);
   font-style: italic;
   transition: color 200ms ease;
+}
+
+.item___1 > img,
+.item___2 > img,
+.item___3 > img,
+.item___4 > img {
+  min-width: 100%;
 }
 
 .item___1 > h4 > a:hover,

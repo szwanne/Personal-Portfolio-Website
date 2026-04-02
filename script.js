@@ -1,3 +1,78 @@
+// ─── HAMBURGER MENU INJECTION & TOGGLE ───────────────────────────────────────
+
+// Inject a hamburger button into every .nav-bar
+document.querySelectorAll(".nav-bar").forEach((navBar) => {
+  const btn = document.createElement("button");
+  btn.className = "hamburger";
+  btn.setAttribute("aria-label", "Toggle navigation");
+  btn.innerHTML = `<span></span><span></span><span></span>`;
+  navBar.prepend(btn);
+
+  const ul = navBar.querySelector("ul");
+
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const isOpen = ul.classList.toggle("open");
+    btn.classList.toggle("open", isOpen);
+    btn.setAttribute("aria-expanded", isOpen);
+  });
+});
+
+// Close any open menu when clicking outside
+document.addEventListener("click", () => {
+  document.querySelectorAll(".nav-bar ul.open").forEach((ul) => {
+    ul.classList.remove("open");
+  });
+  document.querySelectorAll(".hamburger.open").forEach((btn) => {
+    btn.classList.remove("open");
+  });
+});
+
+// Close menu when a nav link is clicked
+document.querySelectorAll(".nav-bar ul li a").forEach((link) => {
+  link.addEventListener("click", () => {
+    document.querySelectorAll(".nav-bar ul.open").forEach((ul) => {
+      ul.classList.remove("open");
+    });
+    document.querySelectorAll(".hamburger.open").forEach((btn) => {
+      btn.classList.remove("open");
+    });
+  });
+});
+
+// ─── SECTION SWITCHING ───────────────────────────────────────────────────────
+
+const sections = {
+  about: document.getElementById("about"),
+  resume: document.getElementById("resume"),
+  portfolio: document.getElementById("portfolio"),
+  blog: document.getElementById("blog"),
+  contact: document.getElementById("contact"),
+};
+
+function showSection(target) {
+  Object.entries(sections).forEach(([key, el]) => {
+    if (el) el.style.display = key === target ? "block" : "none";
+  });
+
+  // Update active state on all nav links across all nav-bars
+  document.querySelectorAll(".nav-bar ul li a").forEach((link) => {
+    link.classList.toggle("active", link.dataset.target === target);
+  });
+}
+
+// Attach click handlers to all nav links
+document.querySelectorAll(".nav-bar ul li a").forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    const target = link.dataset.target;
+    if (target) showSection(target);
+  });
+});
+
+// Show About by default on load
+showSection("about");
+
 document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll(
     ".right-section, .resume-container, .portfolio-container, .blog-container, .contact-container",

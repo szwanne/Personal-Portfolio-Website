@@ -1,14 +1,6 @@
-/* =====================================================
-     Mobile  : max-width 580px
-     Tablet  : 581px – 900px
-     Laptop  : 901px – 1200px
-     Desktop : 1201px and above (base styles in style.css)
-   ===================================================== */
-
-/* 
+/* ─────────────────────────────────────────────
    LAPTOP  (901px – 1200px)
-   Side-by-side layout kept, just tightened up
- */
+───────────────────────────────────────────── */
 @media screen and (max-width: 1200px) {
   .main-container {
     margin: 30px 40px;
@@ -58,28 +50,98 @@
   .resume-container {
     max-width: 100%;
   }
+  .item___6 h4,
+  .item___3 h4,
+  .item___4 h4,
+  .item___1 h4,
+  .item___2 h4,
+  .item___5 h4 {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 180px !important;
+    padding: 0 20px !important;
+  }
 }
 
-/*
+@media screen and (max-width: 1086px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-bar {
+    min-height: 80px;
+  }
+
+  .nav-bar ul {
+    display: flex;
+    flex-direction: column;
+    min-height: 150px;
+    column-gap: 10px;
+    border-radius: 0 0 15px 15px;
+    border-top: 1px solid var(--border);
+    background-color: var(--panel-alt);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  }
+
+  .nav-bar ul.open {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1078px) {
+  .grid-section {
+    grid-template-columns: 1fr !important;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 20px;
+  }
+
+  .item___6 h4,
+  .item___3 h4,
+  .item___4 h4,
+  .item___1 h4,
+  .item___2 h4,
+  .item___5 h4 {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 180px !important;
+    padding: 0 20px !important;
+  }
+}
+
+@media screen and (max-width: 1046px) {
+  .grid-portfolio-section {
+    grid-template-columns: 1fr !important;
+    padding: 10px;
+    row-gap: 10px;
+  }
+
+  .portfolio-text {
+    display: flex !important;
+    gap: 20px !important;
+  }
+}
+
+/* ─────────────────────────────────────────────
    TABLET  (581px – 900px)
-   Stack left + right vertically; single column
-   grids; nav bar wraps
-*/
-@media screen and (max-width: 900px) {
+───────────────────────────────────────────── */
+@media screen and (max-width: 950px) {
   body {
     font-size: 16px;
   }
 
-  /* Stack the two panels on top of each other */
   .main-container {
     flex-direction: column;
     margin: 20px 20px;
     gap: 20px;
   }
 
-  /* Left sidebar becomes a top card */
   .left-section {
-    width: 100%;
+    min-width: 100%;
     margin: 0 auto;
     padding: 20px;
     display: flex;
@@ -97,7 +159,6 @@
     height: auto !important;
   }
 
-  /* Personal info icons row */
   .personal-info {
     width: 100%;
     display: grid;
@@ -114,7 +175,6 @@
     align-items: flex-start;
   }
 
-  /* Right section and all page containers fill full width */
   .right-section,
   .resume-container,
   .portfolio-container,
@@ -126,27 +186,43 @@
     border-radius: 15px;
   }
 
-  /* Nav bar spans full width and wraps if needed */
-  .nav-bar ul {
+  .personal-info > *:last-child {
+    grid-column: 1 / -1;
+  }
+
+  /* Show hamburger, hide nav links by default on tablet */
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-bar {
+    min-height: 60px;
+  }
+
+  .nav-bar ul li {
     width: 100%;
-    flex-wrap: wrap;
-    height: auto;
-    padding: 10px 0;
-    gap: 5px;
-    border-bottom-left-radius: 0;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    justify-content: center;
+    text-align: center;
   }
 
   .nav-bar ul li a {
-    font-size: 13px;
-    padding: 5px 8px;
+    display: block;
+    font-size: 15px;
+    padding: 12px 20px;
+    border-radius: 0;
+    border-bottom: 1px solid var(--border);
   }
 
-  /* About — work items single column on smaller tablets */
+  .nav-bar ul li:last-child a {
+    border-bottom: none;
+  }
+
+  .nav-bar ul li a:hover {
+    background-color: var(--accent-glow);
+    color: var(--accent);
+  }
+
   .grid-section {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     padding: 10px;
   }
 
@@ -158,7 +234,6 @@
     max-height: none;
   }
 
-  /* Tech stack wraps */
   .stack {
     flex-wrap: wrap;
     justify-content: center;
@@ -171,7 +246,6 @@
     padding-bottom: 20px;
   }
 
-  /* Resume */
   .education-section,
   .experience-section,
   .skills-section {
@@ -188,7 +262,6 @@
     max-width: 100%;
   }
 
-  /* Portfolio & Blog — single column */
   .grid-portfolio-section,
   .grid-blog-section {
     grid-template-columns: 1fr;
@@ -213,16 +286,6 @@
     height: auto;
   }
 
-  .item___6 h4,
-  .item___3 h4,
-  .item___4 h4,
-  .item___1 h4,
-  .item___2 h4,
-  .item___5 h4 {
-    width: auto;
-  }
-
-  /* Contact */
   .google-map {
     height: 250px;
   }
@@ -231,14 +294,26 @@
     min-width: 90%;
     width: 90%;
   }
+
+  .item___6 h4,
+  .item___3 h4,
+  .item___4 h4,
+  .item___1 h4,
+  .item___2 h4,
+  .item___5 h4 {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 180px !important;
+    padding: 0 20px !important;
+  }
 }
 
 /* ─────────────────────────────────────────────
    MOBILE  (max 580px)
-   Fully single-column, compact spacing,
-   nav items smaller, grids collapse to 1 col
 ───────────────────────────────────────────── */
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 660px) {
   body {
     font-size: 15px;
   }
@@ -248,10 +323,9 @@
     gap: 15px;
   }
 
-  /* Left panel */
   .left-section {
     padding: 15px;
-    border-radius: 15px;
+    border-radius: 12px;
   }
 
   .left-section h1 {
@@ -264,7 +338,6 @@
     height: auto !important;
   }
 
-  /* Personal info stacks into single column on very small screens */
   .personal-info {
     grid-template-columns: 1fr;
   }
@@ -277,24 +350,27 @@
     font-size: 24px;
   }
 
-  /* Nav bar */
+  .nav-bar {
+    min-height: 56px;
+  }
+
   .nav-bar ul {
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: auto;
-    padding: 8px;
-    gap: 4px;
-    justify-content: center;
-    border-radius: 12px;
+    top: 55px;
+    border-radius: 0 0 12px 12px;
   }
 
   .nav-bar ul li a {
-    font-size: 12px;
-    padding: 4px 6px;
-    display: block;
+    font-size: 14px;
+    padding: 11px 16px;
   }
 
-  /* Page section headers */
+  .hamburger {
+    top: 8px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+  }
+
   header h1 {
     font-size: 22px;
     padding: 15px;
@@ -306,14 +382,12 @@
     margin-left: 10px;
   }
 
-  /* About section */
   .about-section p {
     padding: 10px;
     font-size: 14px;
     line-height: 22px;
   }
 
-  /* Work grid — single column on mobile */
   .grid-section {
     grid-template-columns: 1fr;
     padding: 10px;
@@ -349,7 +423,6 @@
     font-size: 13px;
   }
 
-  /* Tech stack — wrap and center */
   .stack {
     flex-wrap: wrap;
     justify-content: center;
@@ -370,7 +443,6 @@
     height: 60px !important;
   }
 
-  /* Resume */
   .resume-container,
   .portfolio-container,
   .blog-container,
@@ -405,7 +477,6 @@
     padding: 0 10px;
   }
 
-  /* Portfolio — single column */
   .grid-portfolio-section {
     grid-template-columns: 1fr;
     margin-left: 0;
@@ -427,7 +498,10 @@
     margin-bottom: 10px;
   }
 
-  /* Blog — single column */
+  .portfolio-text input {
+    width: 100%;
+  }
+
   .grid-blog-section {
     grid-template-columns: 1fr;
     margin-left: 0;
@@ -451,7 +525,6 @@
     font-size: 13px;
   }
 
-  /* Contact */
   .google-map {
     height: 200px;
   }
@@ -474,5 +547,46 @@
     width: 100%;
     padding: 12px;
     font-size: 15px;
+  }
+
+  .grid-portfolio-section {
+    grid-template-columns: 1fr !important;
+    padding: 10px;
+    row-gap: 10px;
+  }
+
+  .grid-blog-section {
+    grid-template-columns: 1fr !important;
+    padding: 10px;
+    row-gap: 10px;
+  }
+  .item___6 h4,
+  .item___3 h4,
+  .item___4 h4,
+  .item___1 h4,
+  .item___2 h4,
+  .item___5 h4 {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 180px !important;
+    padding: 0 20px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .item___6 h4,
+  .item___3 h4,
+  .item___4 h4,
+  .item___1 h4,
+  .item___2 h4,
+  .item___5 h4 {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 180px !important;
+    padding: 0 20px !important;
   }
 }
